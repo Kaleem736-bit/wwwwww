@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>لوحة الإدارة</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>لوحة الإدارة</h1>
+    <div id="admin-auth">
+      <input type="password" id="adminPass" placeholder="كلمة المرور" />
+      <button onclick="adminLogin()">دخول</button>
+    </div>
+
+    <div id="admin-panel" style="display: none;">
+      <h2>جميع المستخدمين</h2>
+      <ul id="userList"></ul>
+
+      <h2>جميع التحويلات</h2>
+      <ul id="allTransfers"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
